@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+.keyword {
+    color: #569cd6; /* C++ keyword color */
+    font-weight: bold;
+}
+.comment {
+    color: #6a9955; /* Comment color */
+    font-style: italic;
+}
+.string {
+    color: #d44cbb; /* String color */
+}
+.toolbar {
+  background-color: #3a3a3a;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #3a3a3a;
+  color: #d4d4d4;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3a3a3a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  color: #d4d4d4;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #2d2d2d;
+}
+#editor {
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 10px;
+  height: calc(100% - 40px);
+  overflow: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+#editor:focus {
+  outline: none;
+
